@@ -1,0 +1,79 @@
+.conteiner{
+    width: 120px;
+    height: 120px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    position: relative;
+  
+  }
+.animated{
+  animation-name: pulso;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.bordeTexto {
+  -webkit-text-stroke: 0.1px black; /* Tamaño y color del borde */
+  text-stroke: 0.1px black; /* Redundante, pero más explícito */
+}
+
+  .customShadow {
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.9); /* sombra interna */
+  }
+
+  .rigth{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.07);
+    clip-path: polygon(0 25%, 50% 50%, 50% 100%, 0 75%);
+    transition: background .7s
+  }
+  
+  .left{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.15);
+    clip-path: polygon(100% 25%, 50% 50%, 50% 100%, 100% 75%);
+    transition: background .7s
+    
+  } 
+
+
+  @keyframes pulso{
+    0%{
+     background-color: var(--color-cyan-600)
+    }  
+    8%{
+      background-color: var(--color-cyan-500)
+    }
+    16%{
+      background-color: var(--color-cyan-400)
+    }
+    24%{
+      background-color:  var(--color-cyan-300)
+    }
+    32%{
+      background-color:  var(--color-cyan-200)
+    }
+    40%{
+      background-color:  var(--color-cyan-200)
+    }
+    48%{
+  
+      background-color:  var(--color-cyan-100)
+    }
+    56%{ 
+      background-color:  var(--color-cyan-50)
+    }
+    60%{
+      background-color:  var(--color-cyan-50)
+    }
+    63%{
+      background-color:  var(--color-white)
+    }
+    
+    100%{
+      background-color:  var(--color-white)
+    }
+  }  
