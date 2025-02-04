@@ -25,7 +25,7 @@ const Proyects = () => {
   }, [emblaApi]);
 
   return (
-    <div id='proyects' className="sm:pl-13 font-main sm:pt-15 p-5  font-bold text-4xl">
+    <div id='proyects' className="sm:pl-13 font-main pt-20 p-5   font-bold text-4xl">
       <h2 className="mb-10 flex gap-2 items-center"> <FaCode/> Proyectos</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:auto-rows-[390px]  sm:gap-10 max-w-[1200px] mx-auto">
         <div className="">
